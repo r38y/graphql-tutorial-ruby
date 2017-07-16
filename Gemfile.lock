@@ -126,6 +126,10 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    search_object (1.2.0)
+    search_object_graphql (0.1)
+      graphql (~> 1.5)
+      search_object (~> 1.2)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -173,6 +177,8 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.2)
   sass-rails (~> 5.0)
+  search_object
+  search_object_graphql
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
