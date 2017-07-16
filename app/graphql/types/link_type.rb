@@ -7,8 +7,6 @@
    field :postedBy, -> { Types::UserType }, property: :user
    field :votes, -> { !types[Types::VoteType] }
    field :voteCount, types.Int do
-     resolve ->(obj, args, ctx) {
-       obj.votes.count
-     }
+     resolve ->(obj, args, ctx) { obj.votes.count }
    end
  end
